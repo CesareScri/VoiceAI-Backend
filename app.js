@@ -8,7 +8,7 @@ import path from "path";
 import { get } from "https";
 
 const app = express();
-const PORT = 3000;
+const PORT =  process.env.PORT || 9001;
 
 app.use(cors());
 app.use(express.static("public"));
